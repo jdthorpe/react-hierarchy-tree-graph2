@@ -76,4 +76,4 @@ background `<rect>`s from being cut off
 
 Result:
 
-<img src="./example.png" alt="Image of the rendered example" width="400"/>
+<img src="./example.png" alt="Image of the rendered example" width="370"/>
