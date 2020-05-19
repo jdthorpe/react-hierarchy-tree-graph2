@@ -73,7 +73,8 @@ _*_ About the border property: The rendered element is a react `<svg>`
 element whose size is *exactly* the width and height of the of the tree
 **excluding any borders applied to the nodes**. When the border property is
 supplied, the overall size of the rendered `<svg>` element is increased by
-the border (in px) in order to prevent the outside borders from being cut
+the border amount (in px) in order to prevent the outside borders of the
+background `<rect>`s from being cut off
 
 Result:
 
