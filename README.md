@@ -11,7 +11,7 @@ This is minimal tree hierarchy with no dependencies (other than react) that is j
 
 ```tsx
 import React from 'react';
-import BoxTree { tree, SimpleBoxProps } from "react-heirarchy-tree-graph2"
+import BoxTree, { tree, SimpleBoxProps } from "react-heirarchy-tree-graph2"
 
 const DarkBlue = "#3f0fff"
 const LightBlue = "#61a5ff"
@@ -38,9 +38,7 @@ const data: tree<SimpleBoxProps> = {
           ]
         },
         { data: { label: "short" } },
-        {
-          data: { label: "labels" }
-        }
+        { data: { label: "labels" } }
       ]
     }]
 }
