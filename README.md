@@ -9,7 +9,7 @@ This is minimal tree hierarchy with no dependencies (other than react) that is j
 
 ## Usage
 
-```ts
+```tsx
 import React from 'react';
 import BoxTree { tree, SimpleBoxProps } from "react-heirarchy-tree-graph2"
 
@@ -77,4 +77,4 @@ the border (in px) in order to prevent the outside borders from being cut
 
 Result:
 
-![Image of the rendered example](./example.png)
+<img src="./example.png" alt="Image of the rendered example" width="400"/>
