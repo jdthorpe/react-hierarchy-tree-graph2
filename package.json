@@ -1,0 +1,29 @@
+{
+  "name": "react-hierarchy-tree-graph2",
+  "version": "1.0.0",
+  "description": "Tiny Heirarchy Tree Graph for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdthorpe/react-hierarchy-tree-graph2.git"
+  },
+  "keywords": [
+    "tree",
+    "heirarchy",
+    "graph",
+    "react"
+  ],
+  "author": "Jason Thorpe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdthorpe/react-hierarchy-tree-graph2/issues"
+  },
+  "homepage": "https://github.com/jdthorpe/react-hierarchy-tree-graph2#readme",
+  "dependencies": {
+    "@types/react": "^16.9.35",
+    "react": "^16.13.1"
+  }
+}
