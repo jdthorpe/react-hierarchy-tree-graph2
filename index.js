@@ -309,3 +309,4 @@ export const BoxTree = (props) => {
             })
             : null));
 };
+export default BoxTree;

@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/jdthorpe/react-hierarchy-tree-graph2.git"
   },
+  "types": "index.d.ts",
   "keywords": [
     "tree",
     "heirarchy",

@@ -112,13 +112,13 @@ export interface BoxTreeProps {
 
     // the data to be rendered
     data: tree<BoxProps>;
-    
+
     // margin around the outer boxes
     border?: number;
 
     // padding in REM
     padding: number;
-    
+
     // margin in REM
     margin: number;
 
@@ -188,13 +188,13 @@ export const BoxTree: FC<BoxTreeProps> = (props) => {
         const RECT_PROPS: SVGProps<SVGRectElement>[] = []
         const TEXT_PROPS: SVGProps<SVGTextElement>[] = []
 
-        const default_text_props:SVGProps<SVGTextElement> = {...DEFAULT_TEXT_PROPS,...props.text_props}
-        const default_rect_props:SVGProps<SVGRectElement> = {...DEFAULT_RECT_PROPS,...props.rect_props}
+        const default_text_props: SVGProps<SVGTextElement> = { ...DEFAULT_TEXT_PROPS, ...props.text_props }
+        const default_rect_props: SVGProps<SVGRectElement> = { ...DEFAULT_RECT_PROPS, ...props.rect_props }
 
         walk(data, (x: BoxProps) => {
             lbls.push(x.label)
-            RECT_PROPS.push(x.rect_props?{ ...default_rect_props,...x.rect_props }: default_rect_props)
-            TEXT_PROPS.push(x.text_props?{ ...default_text_props,...x.text_props }: default_text_props)
+            RECT_PROPS.push(x.rect_props ? { ...default_rect_props, ...x.rect_props } : default_rect_props)
+            TEXT_PROPS.push(x.text_props ? { ...default_text_props, ...x.text_props } : default_text_props)
         })
 
         // create the text element refs
@@ -432,8 +432,8 @@ export const BoxTree: FC<BoxTreeProps> = (props) => {
         setHeads(HEADS)
         setLRBounds(LRBOUNDS)
         setSize({
-            width: TB.data.width + 2 * (border||0),
-            height: row_height.reduce((x, y) => x + y, 0) + 2 * (row_height.length - 1) * margin * rem + 2 * (border||0),
+            width: TB.data.width + 2 * (border || 0),
+            height: row_height.reduce((x, y) => x + y, 0) + 2 * (row_height.length - 1) * margin * rem + 2 * (border || 0),
         })
         setTextPositions(textPos)
         setBGRects(bgRects)
@@ -501,3 +501,5 @@ export const BoxTree: FC<BoxTreeProps> = (props) => {
 
     </svg>)
 }
+
+export default BoxTree
